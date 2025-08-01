@@ -1,4 +1,5 @@
 import { Instagram, Github, Youtube } from "lucide-react";
+import logo from '../assets/logo.png';
 
 export default function Footer() {
   return (
@@ -8,8 +9,8 @@ export default function Footer() {
           {/* Logo */}
           <div className="flex items-center justify-center mb-6 animate-fade-in">
             <img
-              src="/logo-800x300.png"
-              alt="Logo - Replace this image"
+              src={logo}
+              alt="Logo"
               className="h-12 w-auto"
               onError={(e) => {
                 e.currentTarget.src =
