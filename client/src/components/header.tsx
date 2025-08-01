@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logo from '../assets/logo.png';
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -24,8 +25,8 @@ export default function Header() {
         {/* Logo */}
         <div className="flex items-center animate-fade-in">
           <img
-            src="/logo-800x300.png"
-            alt="Logo - Replace this image"
+            src={logo}
+            alt="Logo"
             className="h-8 w-auto"
             onError={(e) => {
               e.currentTarget.src =
